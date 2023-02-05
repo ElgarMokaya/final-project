@@ -1,0 +1,164 @@
+body div .wrapper{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 62%;
+	font-size: 14px;
+	position: relative;
+}
+div.wrapper{
+	font-size: 12px;
+	height: 100%;
+	width: 100%;
+}
+.navbartoggle{
+	background-color: inherit;
+	color: inherit;
+	border: none;
+}
+
+
+
+#statusnav{
+	display: none;
+}
+.img-responsive{
+	width: 200px;
+	height: 200px;
+}
+#navsidebar{
+	width: 230px;
+	
+	float: left;
+	position: relative;
+	height: 500px;
+	
+	height: 100vh;
+	padding: 0;
+	/*background-color: red;*/
+
+}
+.navbar-header{
+	width: 100%;
+}
+#page-wrapper{
+	width: calc(100% - 260px);
+	float: left;
+	margin-left: 30px;
+	padding: 0px;
+
+}
+
+#nav{
+	margin: 1px 0;
+	position: relative;
+	background-color: inherit;
+	height: 100vh;
+	/*background-color: green;*/
+	width: 230px;	
+
+	
+}
+.footer{
+	margin-bottom: 0px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	
+	text-align: center;
+	font-size: 14px;
+}
+
+.panel-green {
+    border-color: #649f2b;
+}
+.panel-green .panel-heading {
+background-color: #4b7720;
+border-color: #7dc736;
+color: #FFFFFF;
+}
+/*.panel-green  {
+background: #649f2b;
+border-color: #7dc736;
+color: #FFFFFF;
+ }
+.panel-green [class^="fa-"]:before,
+.panel-green [class*=" fa-"]:before {
+color: rgba(255, 255, 255, 0.8);
+margin-right: 5px;*/
+}
+.panel-yellow {
+border-color: #d0b426;
+}
+.panel-yellow > .panel-heading {
+background-color: #a58f1e;
+border-color: #dec64b;
+color: #FFFFFF;
+}
+/*.panel-yellow {
+background: #d0b426;
+border-color: #dec64b;
+color: #FFFFFF;
+}
+.panel-yellow [class^="fa-"]:before,
+.panel-yellow [class*=" fa-"]:before {
+ color: rgba(255, 255, 255, 0.8);
+ margin-right: 5px;
+ }*/
+ /*.panel-yellow  {
+background: #d0b426;
+border-color: #dec64b;
+color: #FFFFFF;
+}
+.panel-yellow [class^="fa-"]:before,
+.panel-yellow [class*=" fa-"]:before {
+ color: rgba(255, 255, 255, 0.8);
+ margin-right: 5px;
+ 
+ }*/
+ #reports{
+	 text-decoration: none;
+	 list-style: none;
+	 margin-left: 45px;
+	 position: relative;
+	 display: block;
+	 border: none;
+ }
+ div span #pull_left{
+	color: #FFFFFF;
+ }
+ #table_data{
+ 	width: 1000px;
+ 
+ }
+ #county_data{
+ 	width: auto;
+ 	margin: auto;
+ }
+  #nav_item a{
+     line-height: 12px;
+     /*width: 18px;*/
+     font-size: 10pt;
+     font-family: tahoma;
+     margin-top: 1px;
+     margin-right: 0px;
+     position:absolute;
+     top:50px;
+     right:0;
+     list-style: none;
+
+ }
+/* .nav-link{
+ 	position: absolute;
+ 	top: 8px;
+ 	right: 16px;
+ 	font-size: 18px;
+ }*/
+ 
+ 
+
+ 
+
+
+
