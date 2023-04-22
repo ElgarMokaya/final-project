@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!isset($_SESSION['id'])){
+  header("Location: ./../index.php");
+  exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -74,7 +81,8 @@ $(document).ready(function(){
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="" style="color: white">Nakuru County Projects Management System</a>
-            <li class="last" style="float: right; list-style: none; font-size: 15px; margin-right: 50px; margin-top: 2px; text-align:center; " ><a href="../index.php">Log out</a></li>
+                <li class="last" style="float: right; list-style: none; font-size: 15px; margin-right: 50px; margin-top: 2px; text-align:center; " ><a href="./logout.php">Log out</a></li>
+                <button type="button" id="add_button" data-toggle="modal" data-target="#profileModal" class="last" style="float: right; list-style: none; font-size: 15px; margin-right: 50px; margin-top: 2px; text-align:center; " >Profile</button>
 
             </div>
 
@@ -333,9 +341,37 @@ $(document).ready(function(){
   </div>
 </div>
 </div>
+
+/* Profile Modal */
+<div id="profileModal" class="modal fade">
+  <div class="modal-dialog">
+    <form method="post" id="user_orm" enctype="multipart/form-data" action="updateProfile.php">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Update Profile</h4>
+        </div>
+        <div class="modal-body">
+          <label>Userame</label>
+          <input type="text" name="username" id="username" class="form-control" required />
+          <br/>
+          <label>Password</label>
+          <input type="password" name="password" id="password" class="form-control"  required />
+          <br />
+        </div>
+        <div class="modal-footer">
+          <input type="hidden" name="user_id" id="user_id" value="<?php echo $_SESSION['id'];?>" />
+          <input type="submit" name="action" id="action" class="btn btn-success" value="Update" name="save" />
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
 <footer class="footer">
   <div class="">
-    Copyright &copy; 2020 <a href="">Government of Nakuru County </a>
+    Copyright &copy; 2023 <a href="">Government of Nakuru County </a>
   </div>
 </footer>
 <script type="text/javascript">

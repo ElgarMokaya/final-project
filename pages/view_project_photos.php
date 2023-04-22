@@ -229,7 +229,7 @@
 		</script>
 <footer class="footer">
   <div class="panel-footer">
-    Copyright &copy; 2020 <a href="https://www.makueni.go.ke">Government of Nakuru County </a>
+    Copyright &copy; 2023 <a href="https://www.makueni.go.ke">Government of Nakuru County </a>
   </div>
 </footer>
 

@@ -5,12 +5,14 @@ class db2{
 	private $username;
 	private $password;
 	private $dbname;
+	private $password_hash;
 	private $charset;
 
 	public function connect(){
 		$this->servername = "localhost";
 		$this->username = "root";
 		$this->password = "";
+	
 		$this->dbname = "cpms_project";
 		$this->charset = "utf8";
 

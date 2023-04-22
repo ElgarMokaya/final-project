@@ -1,3 +1,6 @@
+<?php
+session_start(); // start the session
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -87,7 +90,7 @@
                                 <input class="form-control" placeholder="Username" name="username" type="text" pattern="^[a-zA-Z.]+$" autofocus required>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Password" name="password" type="password" autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                                <input class="form-control" placeholder="Password" name="password" type="password" autocomplete="off" required>
 							</div>
                             <input type="submit" name="login" value="LOG IN" class="btn btn-lg btn-success btn-block"/>
                         </fieldset>

@@ -221,7 +221,7 @@ $(document).ready(function(){
     </div>
 <footer class="footer">
   <div class="">
-    Copyright &copy; 2020 <a href="">Government of Nakuru County </a>
+    Copyright &copy; 2023 <a href="">Government of Nakuru County </a>
   </div>
 </footer>
 

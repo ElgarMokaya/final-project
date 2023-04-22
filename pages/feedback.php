@@ -5,18 +5,19 @@ class User extends db{
 	
 	 public function feedback(){
 	 	// echo 'here';
-	 	$name = $_POST['name'];
-	 	$message = $_POST['message'];
-	 	$email = $_POST['email'];
+	 	 $name = $_POST['name'];
+	 	 $message = $_POST['message'];
+	 	 $email = $_POST['email'];
+		 $password=$_POST['password'];
 	 	$phone = $_POST['phone'];
-	 	$project_id = $_GET['pid'];
+	 	 $project_id = $_GET['pid'];
 	 	
 
 	 	
 	 	
-	 	$query = 'INSERT INTO cpms_project.citizen (name, message,email, phone, project_id) VALUES (?, ?, ?, ?, ?)';
+	 	$query = 'INSERT INTO cpms_project.citizen (name, message,email, phone, project_id,password) VALUES (?, ?, ?, ?, ?)';
 	 	$pdo = $this->connect()->prepare($query);
-	 	$pdo->execute(array($name, $message, $email,$phone, $project_id));
+	 	$pdo->execute(array($name, $message, $email,$phone, $project_id,$password));
 	 	header("location:indexProjects.php");
 
 
@@ -30,7 +31,7 @@ class User extends db{
 		if (isset($_POST['save'])) {
 			// echo "here in";
 			$user->feedback();
-            }
 
+            }
 
 ?>
